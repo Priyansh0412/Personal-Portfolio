@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyansh vashishtha</title>
+    <link rel="icon" type="image/png" href="assets/favicon/pv.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Splash screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="crt-screen">
+            <h1 id="scramble-text"></h1>
+            <p id="click-prompt">Click to Continue</p>
+        </div>
+    </div>
+
+    <!-- The Main Terminal Interface -->
+    <section id="main-terminal" class="main-terminal visually-hidden">
+        <!-- HEADER: This section is now fully fixed, including the command list -->
+        <header class="terminal-header">
+            <div class="terminal-title-area">
+                <div class="title-text">
+                    <h2>Priyansh vashishtha</h2>
+                    <p>Cloud-Native Backend Developer</Back-end></p>
+                </div>
+                <a href="https://www.linkedin.com/in/priyansh-vashishtha-b9879321b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" id="linkedin-link" title="linkedin" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/music icon/vinyl.png" alt="Vinyl Icon">
+                </a>
+            </div>
+            <nav class="command-list">
+                <!-- This new wrapper will contain the text and the border -->
+                <div class="command-list-wrapper">
+                    <span>help</span>
+                    <span>about</span>
+                    <span>education</span>
+                    <span>certifications</span>
+                    <span>leadership</span>
+                    <span>skills</span>
+                    <span>projects</span>
+                    <span>experience</span>
+                    <span>contact</span>
+                    <span>socials</span>
+                    <span>clear</span>
+                </div>
+            </nav>
+        </header>
+
+        <!-- BODY: This is the main scrollable content area -->
+        <main id="terminal-body">
+            <div class="terminal-content">
+                <div id="terminal-output">
+                    <div class="output-block">
+                        <div class="terminal-output-line">
+                            <span class="prompt">idd:\user\Priyansh vashishtha></span>
+                            <span class="command-input">welcome</span>
+                        </div>
+                        <div class="output-text">Hi, I'm Priyansh vashishtha, a passionate developer with experience in building designing scalable backend architectures and automating cloud infrastructure.</div>
+                        <div class="output-text output-gap">Welcome to my interactive terminal based portfolio!</div>
+                        <div class="output-text">Type 'help', then press 'enter' to get started.</div>
+                    </div>
+                </div>
+                <div class="terminal-input-line">
+                    <span class="prompt">idd:\user\Priyansh vashishtha></span><span id="user-input-text"></span><span id="suggestion-text"></span><span class="cursor"></span><input type="text" id="terminal-input" autocomplete="off" autofocus>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER: This section is fixed to the bottom -->
+        <footer class="terminal-footer">
+            <span class="footer-left">priyanshvashishtha@portfolio</span>
+            <span id="clock" class="footer-right"></span>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
